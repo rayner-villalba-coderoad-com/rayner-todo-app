@@ -38,8 +38,8 @@ jobs:
 
       # 4. Generate Native Code (CNG)
       # We do this BEFORE setting up Gradle so the wrapper exists
-      - name: Expo Prebuild
-        run: npx expo prebuild --platform android
+      #- name: Expo Prebuild
+      #  run: npx expo prebuild --platform android
 
       # 5. Setup Gradle (The "Magic" Step)
       # moved AFTER prebuild so it detects the 'android' folder
